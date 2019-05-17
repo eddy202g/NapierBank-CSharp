@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="NapierBank.Views.ViewTweetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NapierBank.Views"
+             mc:Ignorable="d" 
+             Background="White"
+             d:DesignHeight="325" d:DesignWidth="325">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+
+        <ComboBox IsEnabled="True" x:Name="ComboBox" HorizontalAlignment="Center" Margin="15,51,5,0" 
+                  VerticalAlignment="Top" Width="305" Height="21" ItemsSource="{Binding tweetMessages}" DisplayMemberPath="{Binding ToString()}" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition MinWidth="55" SharedSizeGroup="ProjektNrColl" />
+                            <ColumnDefinition MinWidth="45" SharedSizeGroup="ProjektBezColl" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding Header}" />
+                    </Grid>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+
+        <Button x:Name="button" Content="{Binding ClearDataButtonText}" Command="{Binding ClearButtonCommand}" HorizontalAlignment="Left" Margin="122,90,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <TextBox x:Name="textBox" FontStyle="Oblique" HorizontalAlignment="Center" Height="195" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Grid.Row="1" IsEnabled="False"/>
+    </Grid>
+
+</UserControl>

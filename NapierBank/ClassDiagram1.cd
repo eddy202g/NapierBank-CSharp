@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="NapierBank.Models.Email">
+    <Position X="0.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAEAAAAQAAEAIABAAAAAAAAAAAAAAAAQAAIAAA=</HashCode>
+      <FileName>Models\Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.Models.Sms">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEAAABAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Sms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.Models.Tweet">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEAAABAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Tweet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.Database.LoadFromFile">
+    <Position X="6.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAgCAAAAAAAAAAEAIAAQgAAAQBQAAAAAAAAAA=</HashCode>
+      <FileName>Database\LoadFromFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.Database.SaveToFile">
+    <Position X="8.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gIAAQAAAgAAAAAAAAAAAEAIAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database\SaveToFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.BaseViewModel">
+    <Position X="11" Y="1.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NapierBank.ViewModels.CreateEmailViewModel">
+    <Position X="5.25" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAAAAwAAABADQCAgAYAAAgAQwAAAAQIGAAAA=</HashCode>
+      <FileName>ViewModels\CreateEmailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.CreateMessageViewModel">
+    <Position X="13.25" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAQgAAABADQCAgAYABAAAAgEAAAQACAAAA=</HashCode>
+      <FileName>ViewModels\CreateMessageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.CreateTweetViewModel">
+    <Position X="0.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABADQCAgAYABAAAAgEAAAQACQAAA=</HashCode>
+      <FileName>ViewModels\CreateTweetViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.MainWindowViewModel">
+    <Position X="7.5" Y="4.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>EwAgIAIQAAAABQAAAQGIAAAUQBAACAAEAAAAAAAAAIA=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.ReportsViewModel">
+    <Position X="15.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAIAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ReportsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.ViewEmailViewModel">
+    <Position X="3" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewEmailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.ViewMessageViewModel">
+    <Position X="10.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>ViewModels\ViewMessageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapierBank.ViewModels.ViewTweetViewModel">
+    <Position X="17.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABACA=</HashCode>
+      <FileName>ViewModels\ViewTweetViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

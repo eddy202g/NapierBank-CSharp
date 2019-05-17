@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="NapierBank.Views.CreateTweetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NapierBank.Views"
+             mc:Ignorable="d" 
+             Background="White"
+             d:DesignHeight="325" d:DesignWidth="325">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Row 1 -->
+        <TextBox Text="{Binding HeaderTextBox}" HorizontalAlignment="Center" Margin="10,33,10,0" VerticalAlignment="Top" Width="280" Height="23" IsEnabled="False"/>
+        <TextBox Text="{Binding SenderTextBox}" HorizontalAlignment="Center" Margin="10,56,10,0" VerticalAlignment="Top" Width="280" Height="23" Grid.RowSpan="2" MaxLength="16">
+            <TextBox.Style>
+                <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                    <Style.Resources>
+                        <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                            <VisualBrush.Visual>
+                                <Label Content="-- Insert ID e.g. @JohnSmith --" Foreground="DarkGray" />
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Style.Resources>
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                            <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                        </Trigger>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="Background" Value="White" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <!-- Row 2 -->
+        <TextBox Text="{Binding BodyTextBox}" HorizontalAlignment="Center" Height="163" Margin="10,10,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Grid.Row="1" MaxLength="140" Grid.RowSpan="2">
+            <TextBox.Style>
+                <Style TargetType="TextBox" xmlns:sys="clr-namespace:System;assembly=mscorlib">
+                    <Style.Resources>
+                        <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Top" Stretch="None">
+                            <VisualBrush.Visual>
+                                <Label Content="-- Insert Message --" Foreground="DarkGray" />
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Style.Resources>
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+                            <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                        </Trigger>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsKeyboardFocused" Value="True">
+                            <Setter Property="Background" Value="White" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <!-- Row 3 -->
+        <Button Content="{Binding SendButtonText}" Command="{Binding SendButtonCommand}" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Width="280"/>
+
+        <!-- Row 4 -->
+        <Button Content="{Binding ClearButtonText}" Command="{Binding ClearButtonCommand}" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Width="280"/>
+ 
+    </Grid>
+</UserControl>
